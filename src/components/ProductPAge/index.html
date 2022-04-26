@@ -8,8 +8,8 @@
     <title>Digitize - Shop</title>
   </head>
   <body class="bg-gray-100 px-6">
-    <!-- app bar -->
-    <div class="flex md:hidden justify-between items-center mt-11 mb-6">
+    <!-- app bar mobile -->
+    <section class="flex md:hidden justify-between items-center mt-11 mb-6">
       <div>Logo</div>
       <h2 class="font-bold text-2xl text-slate-800">گوشی هوشمند</h2>
       <div
@@ -29,8 +29,8 @@
           />
         </svg>
       </div>
-    </div>
-    <!-- filter section -->
+    </section>
+    <!-- filter,sort section mobile -->
     <section class="md:hidden flex items-center justify-between gap-x-2 mb-9">
       <div
         class="bg-white flex items-center justify-center py-3 px-2 w-1/2 rounded-md"
@@ -70,11 +70,87 @@
         <p class="text-slate-800 font-medium text-sm mr-2">فیلتر:اپل</p>
       </div>
     </section>
-    <!-- product -->
+
+    <!-- main -->
     <section
-      id="productList"
-      class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-3 gap-y-6"
-    ></section>
+      class="md:grid grid-cols-12 grid-rows-[55px_minmax(500px,_1fr)] gap-x-4 gap-y-10"
+    >
+      <!-- sidebar (filter section) desktop -->
+      <aside class="col-span-2 row-span-2 bg-red-200"></aside>
+      <!-- sort section desktop -->
+      <section
+        x-data="{sort:'popular'}"
+        class="bg-white col-span-10 flex items-center justify-start px-2 rounded-md gap-x-7"
+      >
+        <div
+          class="w-10 h-10 bg-orange-100 flex items-center justify-center rounded-md cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-7 w-8 stroke-orange-400"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3 4h13M3 8h9m-9 4h9m5-4v12m0 0l-4-4m4 4l4-4"
+            />
+          </svg>
+        </div>
+        <button
+          @click="sort='popular'"
+          :class="sort==='popular' ? 'text-slate-900 font-bold' : 'text-gray-400'"
+          class="cursor-pointer py-2 relative"
+        >
+          <span> محبوب ترین محصول </span>
+          <div
+            x-show="sort==='popular'"
+            class="w-1.5 h-1.5 absolute top-1 -left-3 rounded-full bg-orange-500"
+          ></div>
+        </button>
+        <button
+          @click="sort='star'"
+          :class="sort==='star' ? 'text-slate-900 font-bold' : 'text-gray-400'"
+          class="cursor-pointer py-2 relative"
+        >
+          <span> پربازدیدترین </span>
+          <div
+            x-show="sort==='star'"
+            class="w-1.5 h-1.5 absolute top-1 -left-3 rounded-full bg-orange-500"
+          ></div>
+        </button>
+        <button
+          @click="sort='high'"
+          :class="sort==='high' ? 'text-slate-900 font-bold' : 'text-gray-400'"
+          class="cursor-pointer py-2 relative"
+        >
+          <span> گران ترین </span>
+          <div
+            x-show="sort==='high'"
+            class="w-1.5 h-1.5 absolute top-1 -left-3 rounded-full bg-orange-500"
+          ></div>
+        </button>
+        <button
+          @click="sort='low'"
+          :class="sort==='low' ? 'text-slate-900 font-bold' : 'text-gray-400'"
+          class="cursor-pointer py-2 relative"
+        >
+          <span> ارزان ترین </span>
+          <div
+            x-show="sort==='low'"
+            class="w-1.5 h-1.5 absolute top-1 -left-3 rounded-full bg-orange-500"
+          ></div>
+        </button>
+      </section>
+      <!-- products -->
+      <section
+        id="productList"
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-3 gap-y-6 col-span-10"
+      ></section>
+    </section>
 
     <script src="//unpkg.com/alpinejs" defer></script>
     <script src="script.js"></script>
