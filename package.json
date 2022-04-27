@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "postcss ./src/css/tailwind.css -o ./public/build/tailwind.css --watch",
-    "prod": "cross-env NODE_ENV=production postcss ./src/css/tailwind.css -o ./public/build/tailwind.css"
+    "dev": "postcss ./src/tailwind.css -o ./build/tailwind.css --watch",
+    "prod": "cross-env NODE_ENV=production postcss ./src/tailwind.css -o ./build/tailwind.css"
   },
   "keywords": [],
   "author": "",
