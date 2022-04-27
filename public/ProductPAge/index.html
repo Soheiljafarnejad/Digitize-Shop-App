@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../build/tailwind.css" />
+    <title>Digitize - Shop</title>
+  </head>
+  <body class="bg-gray-100 px-6">
+    <!-- app bar mobile -->
+    <section class="flex md:hidden justify-between items-center mt-11 mb-6">
+      <div>Logo</div>
+      <h2 class="font-bold text-2xl text-slate-800">گوشی هوشمند</h2>
+      <div
+        class="w-8 h-8 bg-white flex items-center justify-center rounded shadow-lg cursor-pointer"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 stroke-slate-800"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+          />
+        </svg>
+      </div>
+    </section>
+    <!-- filter,sort section mobile -->
+    <section class="md:hidden flex items-center justify-between gap-x-2 mb-8">
+      <div
+        class="bg-white flex items-center justify-center py-3 px-2 w-1/2 rounded-md"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 stroke-orange-600"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 4h13M3 8h9m-9 4h9m5-4v12m0 0l-4-4m4 4l4-4"
+          />
+        </svg>
+        <p class="text-slate-800 font-medium text-sm mr-2">محبوب ترین</p>
+      </div>
+      <div
+        class="bg-white flex items-center justify-center py-3 px-1 w-1/2 rounded-md"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 stroke-gray-300"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"
+          />
+        </svg>
+        <p class="text-slate-800 font-medium text-sm mr-2">فیلتر:اپل</p>
+      </div>
+    </section>
+
+    <!-- main -->
+    <section
+      class="md:grid grid-cols-12 grid-rows-[55px_minmax(500px,_1fr)] gap-x-4 gap-y-8"
+    >
+      <!-- sidebar (filter section) desktop -->
+      <aside class="col-span-3 row-span-2 hidden md:block">
+        <section
+          class="bg-white rounded-md flex flex-col items-start justify-start gap-y-4 py-6"
+        >
+        <!-- category desktop -->
+          <section class="w-full">
+            <ul >
+              <li>
+                <h2 class="text-orange-500 text-xl mb-5 font-bold px-4">
+                  دسته بندی
+                </h2>
+              </li>
+              <li class="text-slate-800 font-normal">
+                <a href="#" class="flex items-center p-4 hover:bg-gray-50">
+                  <svg
+                    width="20"
+                    height="25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13 12.75v7.5c0 3-.75 3.75-3.75 3.75h-4.5c-3 0-3.75-.75-3.75-3.75v-7.5C1 9.75 1.75 9 4.75 9h4.5c3 0 3.75.75 3.75 3.75ZM8.5 11.625h-3"
+                      stroke="#222F5D"
+                      stroke-width="1.125"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7 21.825A1.163 1.163 0 1 0 7 19.5a1.163 1.163 0 0 0 0 2.325Z"
+                      stroke="#222F5D"
+                      stroke-width="1.125"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <circle
+                      cx="10.5"
+                      cy="9.5"
+                      r="9.5"
+                      fill="#AFAFAF"
+                      fill-opacity=".29"
+                    />
+                  </svg>
+                  <span class="lg:text-lg mr-2"> تلفن همراه </span>
+                </a>
+              </li>
+
+              <li class="text-slate-800 font-normal">
+                <a href="#" class="flex items-center p-4 hover:bg-gray-50">
+                  <svg
+                    width="21"
+                    height="23"
+                    viewBox="0 0 21 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="11.5"
+                      cy="9.5"
+                      r="9.5"
+                      fill="#AFAFAF"
+                      fill-opacity="0.29"
+                    />
+                    <path
+                      d="M4.29331 8.3335H11.7C14.0733 8.3335 14.6666 8.92683 14.6666 11.2935V15.5135C14.6666 17.8868 14.0733 18.4735 11.7066 18.4735H4.29331C1.92665 18.4802 1.33331 17.8868 1.33331 15.5202V11.2935C1.33331 8.92683 1.92665 8.3335 4.29331 8.3335Z"
+                      stroke="#222F5D"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8 18.48V21.6666"
+                      stroke="#222F5D"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M1.33331 15.6665H14.6666"
+                      stroke="#222F5D"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M5 21.6665H11"
+                      stroke="#222F5D"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span class="lg:text-lg mr-2">لب تاپ </span>
+                </a>
+              </li>
+              <li class="text-slate-800 font-normal">
+                <a href="#" class="flex items-center p-4 hover:bg-gray-50">
+                  <svg
+                    width="21"
+                    height="22"
+                    viewBox="0 0 21 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="11.5"
+                      cy="9.5"
+                      r="9.5"
+                      fill="#AFAFAF"
+                      fill-opacity="0.29"
+                    />
+                    <path
+                      d="M5.66646 18.6668H10.3331C11.8865 18.6668 12.6665 17.8868 12.6665 16.3335V11.6668C12.6665 10.1135 11.8865 9.3335 10.3331 9.3335H5.66646C4.11313 9.3335 3.33313 10.1135 3.33313 11.6668V16.3335C3.33313 17.8868 4.11313 18.6668 5.66646 18.6668Z"
+                      stroke="#222F5D"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.6665 7.3335H5.33313"
+                      stroke="#222F5D"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.6665 20.6665H5.33313"
+                      stroke="#222F5D"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.66687 12.3335V14.3335H9.66687"
+                      stroke="#222F5D"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <span class="lg:text-lg mr-2">ساعت هوشمند</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        <!-- filter desktop -->
+          <section class="w-full">
+            <h2 class="text-orange-500 text-xl mb-5 font-bold px-4">فیلترها</h2>
+            <!-- accordion -->
+            <div x-data="{tabOne:true,brand:'apple'}" class="">
+            <!-- accordion--title -->
+              <div
+                @click="tabOne=!tabOne"
+                class="flex items-center justify-between cursor-pointer px-4"
+              >
+              <div class="inline-flex items-center flex-1 py-2">
+                <svg
+                  width="20"
+                  height="22"
+                  viewBox="0 0 20 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="10.5"
+                    cy="9.5"
+                    r="9.5"
+                    fill="#AFAFAF"
+                    fill-opacity="0.29"
+                  />
+                  <path
+                    d="M12.8334 21.271H1.16669C0.92752 21.271 0.729187 21.0727 0.729187 20.8335C0.729187 20.5943 0.92752 20.396 1.16669 20.396H12.8334C13.0725 20.396 13.2709 20.5943 13.2709 20.8335C13.2709 21.0727 13.0725 21.271 12.8334 21.271Z"
+                    fill="#222F5D"
+                  />
+                  <path
+                    d="M2.15845 20.8331H1.28345L1.31262 13.8156C1.31262 13.3198 1.54011 12.8589 1.93095 12.5556L6.01428 9.37643C6.59178 8.92726 7.40262 8.92726 7.98595 9.37643L12.0693 12.5498C12.4543 12.8531 12.6876 13.3256 12.6876 13.8156V20.8331H11.8126V13.8214C11.8126 13.5998 11.7076 13.3839 11.5326 13.2439L7.44928 10.0706C7.18678 9.86643 6.81928 9.86643 6.55095 10.0706L2.46762 13.2498C2.29262 13.3839 2.18762 13.5998 2.18762 13.8214L2.15845 20.8331Z"
+                    fill="#222F5D"
+                  />
+                  <path
+                    d="M9.91665 21.2707H4.08331C3.84415 21.2707 3.64581 21.0723 3.64581 20.8332V15.2915C3.64581 14.5682 4.23498 13.979 4.95831 13.979H9.04165C9.76498 13.979 10.3541 14.5682 10.3541 15.2915V20.8332C10.3541 21.0723 10.1558 21.2707 9.91665 21.2707ZM4.52081 20.3957H9.47915V15.2915C9.47915 15.0523 9.28081 14.854 9.04165 14.854H4.95831C4.71915 14.854 4.52081 15.0523 4.52081 15.2915V20.3957Z"
+                    fill="#222F5D"
+                  />
+                  <path
+                    d="M5.83331 18.7915C5.59415 18.7915 5.39581 18.5932 5.39581 18.354V17.479C5.39581 17.2398 5.59415 17.0415 5.83331 17.0415C6.07248 17.0415 6.27081 17.2398 6.27081 17.479V18.354C6.27081 18.5932 6.07248 18.7915 5.83331 18.7915Z"
+                    fill="#222F5D"
+                  />
+                  <path
+                    d="M7.875 12.8125H6.125C5.88583 12.8125 5.6875 12.6142 5.6875 12.375C5.6875 12.1358 5.88583 11.9375 6.125 11.9375H7.875C8.11417 11.9375 8.3125 12.1358 8.3125 12.375C8.3125 12.6142 8.11417 12.8125 7.875 12.8125Z"
+                    fill="#222F5D"
+                  />
+                </svg>
+                <p class="lg:text-lg mr-2">برند محصول</p>
+              </div>
+              <svg
+              xmlns="http://www.w3.org/2000/svg"
+              :class="tabOne ? '-rotate-180' : '' "
+              class="h-5 w-5 transition-all duration-500"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+              </div>
+
+            <!-- accordion--body -->
+              <div
+                :class="tabOne ? 'h-auto opacity-1' : 'h-0 opacity-0' "
+                class="overflow-hidden px-3 pt-2 transition-all duration-1000"
+              >
+                <ul>
+                  <li>
+                    <input id="1" type="radio" class="hidden">
+                    <label @click="brand='apple'"  for="1" class="flex items-center  p-3 cursor-pointer">
+                      <span :class="brand==='apple' ? 'bg-slate-800' : '' " class="w-5 h-5 border-2 border-slate-800 rounded-md flex items-center justify-center">
+                        <svg x-show="brand==='apple'" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                      </span>
+                      <span class="mr-2 md:text-lg text-slate-800">اپل</span>
+                    </label>
+                  </li>
+                  <li >
+                    <input id="1" type="radio" class="hidden">
+                    <label @click="brand='xiaomi'"  for="1" class="flex items-center p-3 cursor-pointer">
+                      <span :class="brand==='xiaomi' ? 'bg-slate-800' : '' " class="w-5 h-5 border-2 border-slate-800 rounded-md flex items-center justify-center">
+                        <svg x-show="brand==='xiaomi'" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                      </span>
+                      <span class="mr-2 md:text-lg text-slate-800">شیائومی</span>
+                    </label>
+                  </li>
+                  <li >
+                    <input id="1" type="radio" class="hidden">
+                    <label @click="brand='samsung'"  for="1" class="flex items-center p-3 cursor-pointer">
+                      <span :class="brand==='samsung' ? 'bg-slate-800' : '' " class="w-5 h-5 border-2 border-slate-800 rounded-md flex items-center justify-center">
+                        <svg x-show="brand==='samsung'" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                      </span>
+                      <span class="mr-2 md:text-lg text-slate-800">سامسونگ</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+        </section>
+      </aside>
+      <!-- sort section desktop -->
+      <section
+        x-data="{sort:'popular'}"
+        class="bg-white col-span-9 hidden md:flex items-center justify-start px-2 rounded-md gap-x-7"
+      >
+        <div
+          class="w-10 h-10 bg-orange-100 flex items-center justify-center rounded-md cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-7 w-8 stroke-orange-400"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3 4h13M3 8h9m-9 4h9m5-4v12m0 0l-4-4m4 4l4-4"
+            />
+          </svg>
+        </div>
+        <button
+          @click="sort='popular'"
+          :class="sort==='popular' ? 'text-slate-900 font-bold' : 'text-gray-400'"
+          class="cursor-pointer py-2 relative"
+        >
+          <span> محبوب ترین محصول </span>
+          <div
+            x-show="sort==='popular'"
+            class="w-1.5 h-1.5 absolute top-1 -left-3 rounded-full bg-orange-500"
+          ></div>
+        </button>
+        <button
+          @click="sort='star'"
+          :class="sort==='star' ? 'text-slate-900 font-bold' : 'text-gray-400'"
+          class="cursor-pointer py-2 relative"
+        >
+          <span> پربازدیدترین </span>
+          <div
+            x-show="sort==='star'"
+            class="w-1.5 h-1.5 absolute top-1 -left-3 rounded-full bg-orange-500"
+          ></div>
+        </button>
+        <button
+          @click="sort='high'"
+          :class="sort==='high' ? 'text-slate-900 font-bold' : 'text-gray-400'"
+          class="cursor-pointer py-2 relative"
+        >
+          <span> گران ترین </span>
+          <div
+            x-show="sort==='high'"
+            class="w-1.5 h-1.5 absolute top-1 -left-3 rounded-full bg-orange-500"
+          ></div>
+        </button>
+        <button
+          @click="sort='low'"
+          :class="sort==='low' ? 'text-slate-900 font-bold' : 'text-gray-400'"
+          class="cursor-pointer py-2 relative"
+        >
+          <span> ارزان ترین </span>
+          <div
+            x-show="sort==='low'"
+            class="w-1.5 h-1.5 absolute top-1 -left-3 rounded-full bg-orange-500"
+          ></div>
+        </button>
+      </section>
+      <!-- products -->
+      <section
+        id="productList"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-3 gap-y-6 col-span-9"
+      ></section>
+
+    </section>
+
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="script.js"></script>
+  </body>
+</html>

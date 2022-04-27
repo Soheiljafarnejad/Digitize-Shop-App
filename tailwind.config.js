@@ -6,7 +6,7 @@ module.exports = {
         'sans': ["iranyekan"],
       },
       screens: {
-        'xs': '395px',
+        'sm': '395px',
       },
     },
   },
