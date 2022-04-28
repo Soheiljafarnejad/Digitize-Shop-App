@@ -136,7 +136,7 @@ data.forEach((item) => {
       </div>
     </div>
     <h3
-      class="font-medium text-slate-900 self-start mb-2"
+      class="font-medium self-start mb-2"
     >
       ${item.title}
     </h3>
