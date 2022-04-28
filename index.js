@@ -2,7 +2,7 @@ const productList = document.querySelector("#productList");
 
 const data = [
   {
-    title: "آیفون 13 مدل 128GB",
+    title: "آیفون 12 مدل 128GB",
     price: "۲۴,۵۶۰,۰۰۰",
     img: "../../assets/img/Home/1.png",
     id: 1,
@@ -32,7 +32,7 @@ const data = [
     id: 5,
   },
   {
-    title: "آیفون 13 مدل 128GB",
+    title: "آیفون 12 مدل 128GB",
     price: "۲۴,۵۶۰,۰۰۰",
     img: "../../assets/img/Home/1.png",
     id: 6,
@@ -70,7 +70,7 @@ data.forEach((item) => {
     class="bg-white p-4 sm:p-2 flex flex-col items-center justify-center rounded-xl shadow-lg"
   >
     <div class="bg-gray-200 rounded-xl w-full p-2 mb-3">
-      <img src=${item.img} />
+      <img src=${item.img} alt="product-${item.id}" />
     </div>
     <div class="flex items-center justify-between w-full mb-4">
       <p class="font-medium text-xs md:text-sm text-gray-300">تلفن همراه</p>
