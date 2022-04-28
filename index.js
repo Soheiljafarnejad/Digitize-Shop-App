@@ -78,12 +78,12 @@ data.forEach((item) => {
         <div
         @click="color='blue'"
         :class="color==='blue' ? 'ring-1 ring-sky-500 ' : '' "
-          class="w-7 h-7 rounded-full bg-sky-500 border-2 -ml-1 border-white flex items-center justify-center cursor-pointer"
+          class="w-6 h-6 md:w-7 md:h-7 rounded-full bg-sky-500 border-2 -ml-1 border-white flex items-center justify-center cursor-pointer"
         >
           <svg
           x-show="color==='blue'"
             xmlns="http://www.w3.org/2000/svg"
-            class="w-4 h-4 text-white"
+            class="w-3 h-3 md:w-4 md:h-4 text-white"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -97,12 +97,12 @@ data.forEach((item) => {
         <div
         @click="color='red'"
         :class="color==='red' ? 'ring-1 ring-red-500 ' : '' "
-          class="w-7 h-7 rounded-full bg-red-500 border-2 border-white -ml-1 flex items-center justify-center cursor-pointer"
+          class="w-6 h-6 md:w-7 md:h-7 rounded-full bg-red-500 border-2 border-white -ml-1 flex items-center justify-center cursor-pointer"
         >
           <svg
           x-show="color==='red'"
             xmlns="http://www.w3.org/2000/svg"
-            class="w-4 h-4 text-white"
+            class="w-3 h-3 md:w-4 md:h-4 text-white"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -116,12 +116,12 @@ data.forEach((item) => {
         <div
         @click="color='orange'"
         :class="color==='orange' ? 'ring-1 ring-orange-500 ' : '' "
-          class="w-7 h-7 rounded-full bg-orange-500 border-2 border-white flex items-center justify-center cursor-pointer"
+          class="w-6 h-6 md:w-7 md:h-7 rounded-full bg-orange-500 border-2 border-white flex items-center justify-center cursor-pointer"
         >
           <svg
           x-show="color==='orange'"
             xmlns="http://www.w3.org/2000/svg"
-            class="w-4 h-4 text-white"
+            class="w-3 h-3 md:w-4 md:h-4 text-white"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -136,17 +136,17 @@ data.forEach((item) => {
       </div>
     </div>
     <h3
-      class=" text-base font-medium text-slate-900 self-start mb-2"
+      class="font-medium text-slate-900 self-start mb-2"
     >
       ${item.title}
     </h3>
     <p
-      class=" text-base md:text-lg text-orange-500 font-medium self-end"
+      class="md:text-lg text-orange-500 self-end"
     >
       ${item.price} تومان
     </p>
     <button
-      class=" text-base text-orange-600 font-bold mt-4 py-2 border-t border-gray-300 w-full"
+      class="text-orange-600 font-bold mt-4 py-2 border-t border-gray-300 w-full"
     >
       مشاهده و سفارش
     </button>
