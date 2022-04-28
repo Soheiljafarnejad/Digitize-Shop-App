@@ -67,7 +67,7 @@ let html = "";
 
 data.forEach((item) => {
   html += ` <div x-data="{color:'blue'}"
-    class="bg-white p-4 sm:p-2 flex flex-col items-center justify-center rounded-xl shadow-lg"
+    class="bg-white p-4 sm:p-2 flex flex-col items-center justify-center rounded-xl shadow-md"
   >
     <div class="bg-gray-200 rounded-xl w-full p-2 mb-3">
       <img src=${item.img} alt="product-${item.id}" />
