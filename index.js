@@ -69,9 +69,9 @@ data.forEach((item) => {
   html += ` <div x-data="{color:'blue'}"
     class="bg-white p-4 sm:p-2 flex flex-col items-center justify-center rounded-xl shadow-md"
   >
-    <div class="bg-gray-200 rounded-xl w-full p-2 mb-3">
+    <a href="/src/singleProduct.html" class="bg-gray-200 rounded-xl w-full p-2 mb-3">
       <img src=${item.img} alt="product-${item.id}" />
-    </div>
+    </a>
     <div class="flex items-center justify-between w-full mb-4">
       <p class="font-medium text-xs md:text-sm text-gray-300">تلفن همراه</p>
       <div class="flex items-center">
