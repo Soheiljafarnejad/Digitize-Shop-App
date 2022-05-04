@@ -165,10 +165,10 @@
       </ul>
     </nav>
 
-    <section class="md:col-span-9 md:bg-white md:px-4 md:py-6 md:rounded-lg ">
+    <section class="md:col-span-9 md:bg-white md:px-4 md:py-6 md:rounded-lg">
       <!-- single product -->
       <section
-        class="flex flex-col items-center justify-center mb-7 md:flex-row md:justify-start md:items-start md:gap-x-4">
+        class="flex flex-col items-center justify-center mb-7 md:flex-row md:justify-start md:items-start md:gap-x-3">
         <div class="flex flex-col items-center">
           <img class="mb-10" src="../assets/img/SingleProduct/Gallery - 1.png" alt="product-img">
           <div class="hidden md:flex gap-x-2">
@@ -178,8 +178,8 @@
           </div>
         </div>
 
-        <div class="flex flex-col items-center justify-center md:items-start flex-1">
-          <h3 class="mb-2 text-2xl font-medium">گوشی آیفون 12 128 گیگ</h3>
+        <div class="flex-auto flex flex-col items-center justify-center md:items-start">
+          <h3 class="mb-2 lg:text-xl font-medium">گوشی آیفون 12 128 گیگ</h3>
           <h3 class=" text-gray-500 text-lg font-light">Apple Iphone 12 128 GB</h3>
 
           <div x-data="{color:'blue'}"
@@ -188,7 +188,7 @@
             <div class="flex items-center justify-between">
               <div @click="color='blue'" :class="color==='blue' ? 'ring-1 ring-sky-500 ' : '' "
                 class="w-7 h-7 rounded-full bg-sky-500 border-2 -ml-1 border-white flex items-center justify-center cursor-pointer">
-                <svg x-show="color==='blue'" xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 md:w-4 md:h-4 text-white"
+                <svg x-show="color==='blue'" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white"
                   viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd"
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -197,7 +197,7 @@
               </div>
               <div @click="color='red'" :class="color==='red' ? 'ring-1 ring-red-500 ' : '' "
                 class="w-7 h-7 rounded-full bg-red-500 border-2 border-white -ml-1 flex items-center justify-center cursor-pointer">
-                <svg x-show="color==='red'" xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 md:w-4 md:h-4 text-white"
+                <svg x-show="color==='red'" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white"
                   viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd"
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -206,8 +206,8 @@
               </div>
               <div @click="color='orange'" :class="color==='orange' ? 'ring-1 ring-orange-500 ' : '' "
                 class="w-7 h-7 rounded-full bg-orange-500 border-2 border-white flex items-center justify-center cursor-pointer">
-                <svg x-show="color==='orange'" xmlns="http://www.w3.org/2000/svg"
-                  class="w-3 h-3 md:w-4 md:h-4 text-white" viewBox="0 0 20 20" fill="currentColor">
+                <svg x-show="color==='orange'" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white"
+                  viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd"
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                     clip-rule="evenodd" />
@@ -215,6 +215,7 @@
               </div>
             </div>
           </div>
+
 
           <ul class="flex md:hidden items-center justify-start flex-wrap gap-x-9 gap-y-5">
             <li class="flex items-center justify-center">
@@ -294,8 +295,72 @@
 
             </ul>
           </div>
-
         </div>
+
+        <div
+          class="hidden flex-auto lg:flex flex-col items-start justify-between gap-x-8 px-4 py-6 max-w-xs bg-gray-100 rounded-md">
+
+          <ul>
+            <li class="flex items-start justify-start mb-4 whitespace-nowrap">
+              <span class="ml-2">
+                <svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.75586 6.54492v2.61917c0 2.61921 1.05 3.66921 3.66917 3.66921h3.14416c2.61921 0 3.66921-1.05 3.66921-3.66921V6.54492"
+                    stroke="#222F5D" stroke-width=".875" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M7.00012 6.99935c1.0675 0 1.855-.86917 1.75-1.93667l-.385-3.89666H5.64095l-.39083 3.89666c-.105 1.0675.6825 1.93667 1.75 1.93667Z"
+                    stroke="#222F5D" stroke-width=".875" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M10.681 6.99935c1.1783 0 2.0416-.95667 1.925-2.12917l-.1634-1.60416c-.21-1.51667-.7933-2.1-2.3216-2.1H8.3418l.40833 4.08916c.09917.9625.96833 1.74417 1.93087 1.74417ZM3.29005 6.99935c.9625 0 1.83167-.78167 1.925-1.74417l.12834-1.28916.28-2.8H3.84422c-1.52833 0-2.11167.58333-2.32167 2.1l-.1575 1.60416c-.11666 1.1725.74667 2.12917 1.925 2.12917ZM7.00008 9.91602c-.97417 0-1.45833.48418-1.45833 1.45828v1.4584h2.91666v-1.4584c0-.9741-.48416-1.45828-1.45833-1.45828Z"
+                    stroke="#222F5D" stroke-width=".875" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <span class="font-medium">نام فروشنده :</span>
+              <span>دیجی تایز</span>
+            </li>
+            <li class="flex items-start justify-start mb-4 whitespace-nowrap">
+              <span class="ml-2">
+                <svg width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.43053 1.57973 3.89594 2.91139c-.81458.30459-1.48041 1.26792-1.48041 2.13209v5.26292c0 .8358.5525 1.9337 1.22541 2.4367l3.04584 2.2737c.99875.7508 2.64208.7508 3.64082 0l3.0458-2.2737c.673-.503 1.2255-1.6009 1.2255-2.4367V5.04348c0-.87125-.6659-1.83459-1.4805-2.13917L9.58386 1.57973c-.60208-.21959-1.56542-.21959-2.15333 0Z"
+                    stroke="#222F5D" stroke-width="1.0625" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <span class="font-medium">گارانتی :</span>
+              <span>18 ماه زرین خدمات</span>
+            </li>
+            <li class="flex items-start justify-start mb-16 whitespace-nowrap">
+              <span class="ml-2">
+                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.99992 1.33301v6.66666c0 .73334-.6 1.33334-1.33333 1.33334H1.33325V5.07967c.48667.58 1.23335.94 2.06002.92.67333-.01333 1.27998-.27333 1.73332-.70666.20666-.17333.38001-.39334.51334-.63334.24-.40667.37332-.88668.35999-1.38668-.02-.78-.36666-1.46665-.90666-1.93998h4.90666Z"
+                    stroke="#222F5D" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M14.6666 9.33301V11.333c0 1.1067-.8933 2-2 2h-.6667c0-.7333-.6-1.3333-1.3333-1.3333-.73335 0-1.33335.6-1.33335 1.3333H6.66659c0-.7333-.6-1.3333-1.33334-1.3333-.73333 0-1.33333.6-1.33333 1.3333h-.66667c-1.10666 0-2-.8933-2-2V9.33301h7.33334c.73333 0 1.33333-.6 1.33333-1.33334V3.33301h1.22668c.48 0 .92.26 1.16.67334l1.14 1.99332h-.86c-.3667 0-.6667.3-.6667.66667v2c0 .36667.3.66667.6667.66667h2Z"
+                    stroke="#222F5D" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M5.33333 14.6667c.73638 0 1.33334-.597 1.33334-1.3334 0-.7363-.59696-1.3333-1.33334-1.3333C4.59695 12 4 12.597 4 13.3333c0 .7364.59695 1.3334 1.33333 1.3334ZM10.6666 14.6667c.7364 0 1.3333-.597 1.3333-1.3334 0-.7363-.5969-1.3333-1.3333-1.3333-.73639 0-1.33335.597-1.33335 1.3333 0 .7364.59696 1.3334 1.33335 1.3334ZM14.6667 8v1.33333h-2c-.3667 0-.6667-.3-.6667-.66666v-2C12 6.3 12.3 6 12.6667 6h.86l1.14 2Z"
+                    stroke="#222F5D" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M6.00008 3.33268c0 .8-.35332 1.51334-.90666 2-.47333.41334-1.08667.66667-1.76001.66667-1.47333 0-2.666662-1.19333-2.666662-2.66667 0-.84.386662-1.59333 1.000002-2.07999.46-.366671 1.04-.586674 1.66666-.586674 1.47334 0 2.66667 1.193334 2.66667 2.666664Z"
+                    stroke="#222F5D" stroke-width="1.125" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M3.50008 2.49902v1l-.83333.5" stroke="#222F5D" stroke-width="1.125" stroke-miterlimit="10"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <span class="font-medium">ارسال توسط :</span>
+              <span>انبار تهران</span>
+            </li>
+          </ul>
+
+          <div class="w-full">
+            <p class="font-medium mb-4 text-left text-orange-500 text-xl">۲۴,۵۶۰,۰۰۰ تومان</p>
+            <button class="font-medium text-white bg-orange-500 py-3 px-4 rounded-md w-full">اضافه به سبد
+              خرید</button>
+          </div>
+        </div>
+
       </section>
 
       <!-- description -->
@@ -333,7 +398,7 @@
             مگ
             باشید چون آیفون ۱۲ و البته سه برادر آن، واقعا جزو هیجان‌انگیزترین گوشی‌های امسال هستند
           </p>
-          <span x-show="truncate===true">...</span>
+          <span :class="truncate ? 'inline md:hidden':'hidden'">...</span>
           <span :class="truncate ? 'hidden md:inline':'inline'">
             برای هرکسی که درون اکوسیستم اپل محبوس شده باشد، خرید آیفون ۱۲ اصلا نیازی به فکر کردن هم ندارد. و وقتی به
             مقایسه
@@ -376,10 +441,10 @@
         </div>
 
         <div x-data="{id:1,activeLink:'bg-white'}"
-          class="bg-white px-4 py-5 mb-4 md:pt-0 rounded-xl flex flex-col items-center justify-center">
+          class="bg-white px-4 py-5 mb-24 md:mb-4 md:pt-0 rounded-xl flex flex-col items-center justify-center">
           <section class="bg-gray-200 flex items-center justify-between w-full text-center p-1 rounded-full md:hidden">
             <button @click="id=1" class="flex-grow py-2 px-4 cursor-pointer rounded-full font-bold"
-              :class="id===1 ? activeLink : 'text-slate-400' ">
+              :class="id===1 ? activeLink : 'text-slate-800' ">
               طراحی
             </button>
             <button @click="id=2" class="flex-grow py-2 px-4 cursor-pointer rounded-full font-bold"
@@ -443,12 +508,18 @@
 
     </section>
 
-
   </main>
 
 
-
-
+  <!-- cart mobile -->
+  <div
+    class="lg:hidden fixed inset-x-0 bottom-0 flex items-center justify-between gap-x-8 z-10 bg-white px-4 py-2 shadow-[0_-2px_8px_0_rgba(0,0,0,0.1)] rounded-tr-md rounded-tl-md">
+    <button class="flex-1 font-medium text-white bg-orange-500 py-3 px-4 rounded-md">اضافه به سبد خرید</button>
+    <div class="flex flex-col items-start justify-start">
+      <span class="text-lg font-medium">۲۴,۵۶۰,۰۰۰</span>
+      <span class="text-gray-400">تومان</span>
+    </div>
+  </div>
 
   <!-- footer desktop -->
   <footer class="hidden md:block bg-white">
